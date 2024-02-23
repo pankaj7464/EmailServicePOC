@@ -1,0 +1,56 @@
+<div class="flex login-container">
+    <mat-card class="mx-auto mt-2">
+      <mat-card-header>
+        <mat-card-title>Login</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="max-w-md">
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+         
+            <div class="mb-4">
+              <mat-form-field class="w-full" >
+                <input matInput placeholder="Email" formControlName="email" />
+                <mat-error
+                  *ngIf="!forgotPasswordClicked&&loginForm.get('email')!.invalid && loginForm.get('email')!.touched"
+                >
+                  Invalid email
+                </mat-error>
+                <mat-error *ngIf="forgotPasswordClicked && loginForm.get('email')!.invalid && loginForm.get('email')!.touched">
+                    Email is required for forgot password
+                  </mat-error>
+              </mat-form-field>
+            </div>
+            <div class="mb-4">
+              <mat-form-field class="w-full" style="display: flex;">
+                <input
+                  matInput
+                  type="password"
+                  placeholder="Password"
+                  formControlName="password"
+                />
+                <mat-error
+                  *ngIf="loginForm.get('password')!.invalid && loginForm.get('password')!.touched"
+                >
+                  Password is required and must be at least 6 characters
+                </mat-error>
+              </mat-form-field>
+            </div>
+            <div class="flex items-center justify-around">
+              <button mat-raised-button color="primary" type="submit">
+                Login
+              </button>
+           
+              <i class="cursor-pointer" mat-button color="primary" (click)="forgotPassword()">
+                Forgot Password?
+              </i>
+            </div>
+            <button mat-button color="primary" routerLink="/register">
+                Don't have an account? Register
+              </button>
+           
+          </form>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    
+  </div>

@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:4200",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\promact.DESKTOP-4UN5AFI\\Desktop\\Project tasks\\Project week 2\\EmailService\\EmailService.Server\\..\\emailservice.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

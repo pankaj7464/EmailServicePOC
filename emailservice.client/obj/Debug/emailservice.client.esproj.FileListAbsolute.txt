@@ -1,0 +1,2 @@
+C:\Users\promact.DESKTOP-4UN5AFI\Desktop\Project tasks\Project week 2\EmailService\emailservice.client\obj\Debug\emailservice.client.esproj.CoreCompileInputs.cache
+C:\Users\promact.DESKTOP-4UN5AFI\Desktop\Project task2\EmailService\emailservice.client\obj\Debug\emailservice.client.esproj.CoreCompileInputs.cache
